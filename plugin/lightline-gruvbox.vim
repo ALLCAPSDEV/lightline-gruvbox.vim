@@ -186,4 +186,7 @@ let s:p.normal.warning = [
 			\ [s:mono0, s:orange, s:c_mono0, s:c_mono4],
 			\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
 
+let s:p.normal.green = [
+			\ [s:mono0, s:green, s:c_mono0, s:c_mono4],
+			\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
 let g:lightline#colorscheme#gruvbox#palette = s:p
