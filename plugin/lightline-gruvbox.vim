@@ -16,10 +16,10 @@ endif
 if s:is_dark
 	let s:mono0   = '#282828'
 	let s:c_mono0 = 235
-	if g:gruvbox_contrast_dark == 'soft'
+	if g:gruvbox_contrast_dark ==? 'soft'
 		let s:mono0 = '#32302f'
 		let s:c_mono0 = 236
-	elseif g:gruvbox_contrast_dark == 'hard'
+	elseif g:gruvbox_contrast_dark ==? 'hard'
 		let s:mono0 = '#1d2021'
 		let s:c_mono0 = 234
 	endif
@@ -106,7 +106,7 @@ let s:p.normal.right = [
 			\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4],
 			\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
 
- 
+
 let s:p.tabline.middle = [
 			\ [s:mono4, s:mono1, s:c_mono4, s:c_mono1]]
 let s:p.tabline.right = [
@@ -177,5 +177,9 @@ let s:p.inactive.right = [
 let s:p.inactive.left = [
 			\ s:p.inactive.middle[0],
 			\ s:p.inactive.middle[0]]
+
+let s:p.normal.error = [
+			\ [s:mono0, s:red, s:c_mono0, s:c_mono4],
+			\ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
 
 let g:lightline#colorscheme#gruvbox#palette = s:p
